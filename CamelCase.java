@@ -14,6 +14,7 @@ class CamelCase
         {
             c=(b)?Character.toUpperCase(c):Character.toLowerCase(c);
             b=(delimiter.indexOf((int)c)>=0);
+            if(b!=true)
             sb.append(c);
         }
         str=sb.toString();
